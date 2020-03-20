@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <style type="text/css">
+        #box1 {
+            width: 800px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        
+        span.title {
+            display: block;
+            width: 100px;
+            height: 30px;
+            position: relative;
+            top: -15px;
+            left: 20px;
+            text-align: center;
+            background: white;
+            color: red;
+        }
+        
+        #box3 {
+            list-style: none;
+        }
+        
+        li {
+            float: left;
+            margin-left: 25px;
+            margin-top: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        
+        #box4 {
+            background: grey;
+        }
+        
+        #box5 {
+            background: purple;
+        }
+        
+        #box6 {
+            background: pink;
+        }
+        
+        #box7 {
+            background: blue;
+        }
+        
+        #box8 {
+            background: yellow;
+        }
+        
+        #box9 {
+            background: green;
+        }
+        
+        .selected {
+            margin-top: 0;
+        }
+        
+        .title2 {
+            background: grey;
+            margin-left: 50px;
+            margin-top: 20px;
+            width: 500px;
+            height: 100px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        <span class="title">网页换肤</span>
+        <div id="box2">
+            <ul id="box3">
+                <li id="box4">1</li>
+                <li id="box5">2</li>
+                <li id="box6">3</li>
+                <li id="box7">4</li>
+                <li id="box8">5</li>
+                <li id="box9">6</li>
+            </ul>
+            <div class="title2">
+                <p style="font-size: 15px;">LocalStorage将数据保存在客户端本地的硬件设备中，即使浏览器被关闭了，该数据仍然存在，下次打开浏览器访问网站时仍然可以继续使用。</p>
+            </div>
+        </div>
+</body>
+<script type="text/javascript">
+    var key = localStorage.getItem("key");
+    var lilist = document.getElementsByTagName("li");
+    var title2 = document.getElementsByClassName("title2")[0];
+    for (var i = 0; i < lilist.length; i++) {
+        lilist[i].flag = i;
+        lilist[i].onclick = function() {
+            for (var j = 0; j < lilist.length; j++) {
+                lilist[j].style.marginTop = 15 + "px";
+            }
+            this.style.marginTop = 0;
+            var str = this.getAttribute("id");
+            title2.setAttribute("id", str);
+            localStorage.setItem("key", this.flag);
+
+        }
+    }
+</script>
+<html>
