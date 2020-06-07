@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8" />
+  <title></title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      padding: 50px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    div {
+      position: relative;
+      width: 1000px;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    ul.image {
+      position: relative;
+    }
+
+    ul.image li {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+    }
+
+    ul.image li.opa {
+      opacity: 1;
+    }
+
+    .pre,
+    .next {
+      position: absolute;
+      top: 45%;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 40px;
+      color: red;
+      cursor: pointer;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .nav {
+      position: absolute;
+      left: 500px;
+      bottom: 20px;
+      list-style-type: none;
+    }
+
+    .nav>li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      background: #cccccc;
+      cursor: pointer;
+      margin: 0 10px;
+      border-radius: 50%;
+      font-size: 10px;
+      text-align: center;
+      line-height: 20px;
+    }
+
+    .nav .active {
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <ul id="image" class="image">
+      <li><img src="images/1.jpg" alt="" /></li>
+      <li><img src="images/2.jpg" alt="" /></li>
+      <li><img src="images/3.jpg" alt="" /></li>
+      <li><img src="images/4.jpg" alt="" /></li>
+      <li><img src="images/5.jpg" alt="" /></li>
+    </ul>
+    <div id="pre" class="pre"><</div>
+    <div id="next" class="next">></div>
+    <ul class="nav" id="nav">
+      <li class="active">1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+      //初始化
+      var index = 0;
+      var t;
+      var length = $('ul li').length;
+      var oNavlist = document.getElementById("nav").children;
+
+      $('#image li').eq(index).addClass('opa');
+
+      //自动切换图片
+      setInterval(autoMove, 3000);
+      function autoMove() {
+        index++;
+        if (index >= length) index = 0;
+        changeTo(index);
+      }
+      function changeTo(index) {
+        $('#image li').eq(index).addClass('opa').siblings().removeClass('opa');
+      }
+      $('#pre').click(function () {
+        index--;
+        if (index < 0) index = length - 1;
+        changeTo(index);
+      });
+      $('#next').click(function () {
+        index++;
+        if (index >= length) index = 0;
+        changeTo(index);
+      });
+      //小按钮背景色切换
+      function yangshi() {
+        for (var j = 0; j < oNavlist.length; j++) {
+          oNavlist[j].className = '';
+        }
+        if (flag > 5) {
+          oNavlist[0].className = "active";
+        }
+        else if (flag <= 0) {
+          oNavlist[4].className = "active";
+        }
+        else {
+          oNavlist[flag - 1].className = "active";
+        }
+      }
+      //小按钮点击事件
+      for (var i = 0; i < oNavlist.length; i++) {
+        yangshi();
+        oNavlist[i].idx = i;
+        flag = oNavlist[i].idx + 1;
+        oNavlist[i].onclick = function () {
+          animate(slider, { left: -1200 * flag });
+        }
+      }
+      for (var i = 0; i < oNavlist.length; i++) {
+        oNavlist[i].flag = i;
+        oNavlist[i].onclick = function () {
+          flag = this.flag + 1;
+          animate(slider, { left: -1200 * flag });
+          yangshi();
+        }
+      }
+
+    </script>
+</body>
+
+</html>
