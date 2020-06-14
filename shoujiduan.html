@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> 五星级酒店</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    #class1{
+            width: 1428px;
+            height: 50px;
+            background-image: url(image/logo.png);
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+        }
+        #ding{
+            width: 150px;
+            height: 50px;
+            float: left;
+            margin-left: 800px;
+            background: #e8420a;
+            color:white;
+            font-size: 30px;
+            text-align: center;
+        }
+        #class2{
+            width: 50px;
+            height: 50px;
+            background-image: url(image/gang.png);
+            background-repeat: no-repeat;
+            background-position: 10% 50%;
+            float: left;
+            margin-left: 350px;
+        }
+        #first {
+            width: 1428px;
+            height: 450px;
+            background-image: url(image/banner.jpg);
+            float: left;
+        }
+        
+        h1 {
+            width: 1428px;
+            line-height: 80px;
+            color: #ffffff;
+            float: left;
+            margin-left: 180px;
+        }
+        
+        #p1 {
+            width: 420px;
+            height: 100px;
+            float: left;
+            margin-left: 180px;
+            border-top: 1px dashed #ffffff;
+            border-bottom: 1px dashed #ffffff;
+        }
+        
+        #p1>p {
+            color: #ffffff;
+            line-height: 30px;
+        }
+        
+        #search {
+            border:3px solid black;
+            width: 580px;
+            height: 50px;
+            float: left;
+            margin-left: 380px;
+            margin-top: 100px;
+        }
+        
+        #search>#position {
+            height: 50px;
+            width: 120px;
+            margin-right: 1px;
+            float: left;
+            color: #ffffff;
+            background-color: #d3d3d8;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        #search>#position2 {
+            width: 310px;
+            height: 50px;
+            float: left;
+            color: #d3d3d8;
+            background-color: #e1e1e1;
+            font-size: 25px;
+            margin-left: -1px;
+        }
+        #search>#position3 {
+            width: 150px;
+            height: 50px;
+            background-color: #cb5405;
+            float: left;
+            text-align: center;
+        }
+        #search>#position2>input {
+            width: 310px;
+            height: 50px;
+            background-color:  #e1e1e1;
+            border:none;
+            font-size: 22px;
+            color:#ffffff;
+        }
+        #search>#position3>button {
+            margin-left: 55px;
+            border:none;
+            background-color: #cb5405;
+            float: left;
+            padding-top: 10px;
+            text-align: center;
+        }
+        #second {
+            width: 1316px;
+            height: 200px;
+            float: left;
+            padding-left: 112px;
+            padding-top: 25px;
+        }
+        #carH{
+            width: 50px;
+            height: 80px;
+            float: left;
+        }
+        #jichang{
+            color: blue;
+            width: 400px;
+            height: 80px;
+            float: left;
+        }
+        #zi{
+            width: 500px;
+            height: 80px;
+            margin-left: 230px;
+            float: left;
+        }
+        #right{
+            width: 100px;
+            height: 25px;
+            border :1px  solid  #c0bebe;
+            float: left;
+            text-align: center;
+        }
+        #third{
+            border-left:5px solid #cb5405;
+            font-size: 35px;
+            width: 1428px;
+            height: 50px;
+            float: left;
+        }
+        #fourth{
+            width: 1428px;
+            height: 400px;
+            background-image: url(image/hot1.jpg);
+            float: left;
+            background-repeat: no-repeat;
+            background-size:1428px 500px
+            
+        }
+        #left{
+            width: 1428px;
+            height: 120px;
+            margin-top: 280px;
+            font-size: 45px;
+            background-color: rgb(32, 28, 28);
+            opacity: 0.3;
+            color: white;
+        }
+        #fifth{
+            width: 1428px;
+            height: 400px;
+            background-image: url(image/hot2.jpg);
+            float: left;
+            background-repeat: no-repeat;
+            background-size:1428px 500px;
+            
+        }
+        #left2{
+            width: 1428px;
+            height: 120px;
+            margin-top: 280px;
+            font-size: 45px;
+            background-color: rgb(32, 28, 28);
+            opacity: 0.3;
+            color: white;
+        }
+        #sixth{
+            width: 1428px;
+            height: 100px;
+            float: left;
+            background-image: url(image/duo.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+
+        }
+        #seventh{
+            border-left:5px solid #cb5405;
+            font-size: 35px;
+            width: 1428px;
+            height: 50px;
+            float: left;
+        }
+        #eighth{
+            width: 1428px;
+            height: 400px;
+            float: left;
+            background-image: url(image/mission1.jpg);
+            background-repeat: no-repeat;
+            background-size:1428px 400px;
+
+        }
+        #ninth{
+            width: 1428px;
+            height: 200px;
+            float: left;
+        }
+        #ninth_top{
+            width: 300px;
+            height: 100px;
+            font-size: 25px;
+            margin-left: 500px;
+        }
+        #ninth_bottom{
+            width: 1428px;
+            height: 100px;
+            font-size: 20px;
+            margin-top: -50px;
+        }
+        #tenth{
+            width: 1428px;
+            height: 400px;
+            float: left;
+            background-image: url(image/mission2.jpg);
+            background-repeat: no-repeat;
+            background-size:1428px 400px;
+
+        }
+        #eleventh{
+            width: 1428px;
+            height: 200px;
+            float: left;
+            font-size: 35px;
+            padding-left: 500px;
+        }
+        #one{
+            width: 1428px;
+            height: 200px;
+            float: left;
+            font-size: 20px;
+            padding-left: 500px;
+            background-image: url(image/icon11.png);
+            background-repeat: no-repeat;
+            background-position: 10% 0%;
+        }
+ 
+        #two{
+            width: 1428px;
+            height: 200px;
+            float: left;
+            font-size: 20px;
+            padding-left: 500px;
+            background-image: url(image/icon22.png);
+            background-repeat: no-repeat;
+            background-position: 10% 0%;
+        }
+        #three{
+            width: 1428px;
+            height:200px;
+            float: left;
+            font-size: 20px;
+            padding-left: 500px;
+            background-image: url(image/icon33.png);
+            background-repeat: no-repeat;
+            background-position: 10% 0%;
+        }
+        #four{
+            width: 1428px;
+            height:100px;
+            float: left;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+        }
+        #four_1{
+            margin-left: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="class1">
+        <div id="ding">快速定制</div>
+        <div id="class2"></div>
+    </div>
+    <div id="first">
+        <h1>悠游古欧洲 游览德法瑞意</h1>
+        <div>
+            <div id="p1">
+                <p>巴黎卢浮宫、塞纳河游船、凡尔赛宫</p>
+                <p>少女峰、大运河游船、金色列车、西庸城堡</p>
+            </div>
+            <div id="search">
+                <div id="position"><image src="image/position.png">目的地</div>
+                <div id="position2"><input type="text" name="search"value = "| 日本 美国 英国 地中海"></div>
+                <div id="position3"><button><image src="image/search.png"></button></div>
+            </div>
+            </image>
+        </div>
+    </div>
+    <div id="second">
+        <div id="carH">
+            <image src="image/carH.png">
+        </div>
+        <div>
+            <h1 id="jichang">机场接送，省钱省心</h1>
+        </div>
+        <div id="zi">
+            <p>提供上海、苏州、无锡各市</p>
+            <p>往返机场、码头接送服务，更有包车服务</p>
+        </div>
+        <div id="right">
+            <div>查看详情</div>
+        </div>
+    </div>
+    <div id="third">
+        <p>热门线路</p>
+    </div>
+    <div id="fourth">
+        <div id="left">
+            <div>
+                <p id="p2">海南三亚五天四晚，纯玩，四晚红树林度假王国</p>
+                <p id="p3">
+                    <font>￥2580</font>/人起</p>
+            </div>
+        </div>
+    </div>
+    <div id="fifth">
+        <div id="left2">
+            <div>
+                <p id="p2">德法意瑞欧洲四国，ABCD任意线路由您挑选</p>
+                <p id="p3">
+                    <font>￥7999</font>/人起</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="sixth">
+    </div>
+    <div id="seventh">
+        <p>使命与愿景:让旅游回归本质,体验纯粹旅游</p>
+    </div>
+    <div id="eighth"></div>
+    <div id="ninth">
+        <div id="ninth_top"><h2>服务理念</h2></div>
+        <div id="ninth_bottom"><p>"英华逸游"通过重新打造旅游全程中的产品线路设计，出行交通方案，陪游向导服务，增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务</p></div>
+    </div>
+    <div id="tenth"></div>
+    <div id="eleventh">
+        <p>--服务优势--</p>
+    </div>
+    <div id="one">
+        <div id="one_1">
+            <p>品质行程</p>
+            <p id="p5">旅游达人精心设计，<br/> 基于口碑反复打磨，全网最好，敢跟任何产品比</p>
+        </div>
+    </div>
+    <div id="two">
+        <div id="one_2">
+            <p>品质消费</p>
+            <p id="p5">不推自费，<br/>不进垃圾购物站和伪景点</p>
+        </div>
+    </div>
+    <div id="three">
+        <div id="one_3">
+            <p>品质小团</p>
+            <p id="p5">独立成团不散拼，<br/>只和亲朋好友一起玩，每天发团</p>
+        </div>
+    </div>
+    <div id="four">
+        <div id="four_1">
+        <p>苏ICP备号、2020</p>
+        <p>@苏州英华国际旅游有限公司 版权所有</p>
+        <p>技术支持杭州科技</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> 五星级酒店</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #class1 {
+            width: 1428px;
+            height: 45px;
+            background-color: rgb(51, 51, 51);
+            background-image: url(image/tell.png);
+            background-repeat: no-repeat;
+            background-position: 65% 50%
+        }
+
+        .one {
+            float: right;
+            margin-top: 10px;
+            margin-right: 220px;
+        }
+
+        .two {
+            float: right;
+            color: rgb(255, 255, 255);
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .three {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .four {
+            float: right;
+            color: rgb(255, 255, 255);
+            margin-right: 45px;
+            margin-top: 12px;
+        }
+
+        .one a {
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+        }
+
+        .three a {
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            width: 1425px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .o {
+            margin-left: 200px;
+        }
+
+        .a {
+            list-style-type: none;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: 85px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #class2 {
+            width: 1428px;
+            background-image: url(image/logo.png);
+            background-repeat: no-repeat;
+            background-position: 15% 50%;
+            background-color:#c0bebe;
+        }
+
+        #class2>ul>li>a:hover {
+            color: rgb(232, 66, 10);
+        }
+
+        #class2 li:hover {
+            border-bottom: 2px solid rgb(232, 66, 10);
+        }
+
+        #class3 {
+            height: 800px;
+            background-color: rgb(245, 245, 245);
+        }
+        #first {
+            width: 1428px;
+            height: 450px;
+            background-image: url(image/banner.jpg);
+            float: left;
+        }
+        
+        h1 {
+            width: 1428px;
+            line-height: 80px;
+            color: #ffffff;
+            float: left;
+            margin-left: 180px;
+        }
+        
+        #p1 {
+            width: 420px;
+            height: 100px;
+            float: left;
+            margin-left: 180px;
+            border-top: 1px dashed #ffffff;
+            border-bottom: 1px dashed #ffffff;
+        }
+        
+        #p1>p {
+            color: #ffffff;
+            line-height: 30px;
+        }
+        
+        #search {
+            border:3px solid black;
+            width: 580px;
+            height: 50px;
+            float: left;
+            margin-left: 380px;
+            margin-top: 100px;
+        }
+        
+        #search>#position {
+            height: 50px;
+            width: 120px;
+            margin-right: 1px;
+            float: left;
+            color: #ffffff;
+            background-color: #d3d3d8;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        #search>#position2 {
+            width: 310px;
+            height: 50px;
+            float: left;
+            color: #d3d3d8;
+            background-color: #e1e1e1;
+            font-size: 25px;
+            margin-left: -1px;
+        }
+        #search>#position3 {
+            width: 150px;
+            height: 50px;
+            background-color: #cb5405;
+            float: left;
+            text-align: center;
+        }
+        #search>#position2>input {
+            width: 310px;
+            height: 50px;
+            background-color:  #e1e1e1;
+            border:none;
+            font-size: 22px;
+            color:#ffffff;
+        }
+        #search>#position3>button {
+            margin-left: 55px;
+            border:none;
+            background-color: #cb5405;
+            float: left;
+            padding-top: 10px;
+            text-align: center;
+        }
+        #second {
+            width: 1316px;
+            height: 365px;
+            float: left;
+            padding-left: 112px;
+            padding-top: 25px;
+            background-color: #c0bebe;
+        }
+        
+        #second>#left {
+            width: 930px;
+            height: 365px;
+            background-image: url(image/Sbanner2.jpg);
+            float: left;
+        }
+        
+        #second>#left>h1 {
+            line-height: 50px;
+            width: 390px;
+            float: right;
+            color: #ffffff;
+        }
+        
+        #second>#left>p {
+            line-height: 30px;
+            width: 390px;
+            float: left;
+            margin-left: 600px;
+            color: #ffffff;
+        }
+        
+        #second>#right {
+            width: 270px;
+            height: 365px;
+            float: left;
+            background-color: #17346e;
+            text-align: center;
+        }
+        
+        #second>#right>image {
+            margin-top: 70px;
+        }
+        
+        #second>#right>p {
+            color: #ffffff;
+            margin-top: 10px;
+        }
+        
+        #second>#right>div {
+            width: 155px;
+            height: 40px;
+            border-radius: 25px;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            font-size: 25px;
+            padding-top: 10px;
+            margin-left: 50px;
+        }
+        #thread {
+            width: 1428px;
+            height: 135px;
+            float: left;
+            background-color: #c0bebe;
+        }
+        
+        #thread>h1 {
+            width: 1428px;
+            line-height: 80px;
+            float: left;
+            margin: 0 0;
+            text-align: center;
+            color: black;
+        }
+        
+        #thread>p {
+            width: 1428px;
+            line-height: 40px;
+            margin: 0 0;
+            float: left;
+            text-align: center;
+        }
+        #fourth {
+            width: 1316px;
+            height: 1050px;
+            float: left;
+            padding-left: 112px;
+            padding-top: 25px;
+            background-color: #c0bebe;
+        }
+        
+        #fourth>#left {
+            width: 590px;
+            height: 1020px;
+            float: left;
+        }
+        
+        #fourth>#left>div {
+            float: left;
+        }
+        
+        #fourth>#left>div>div {
+            background-color: black;
+            float: left;
+            width: 590px;
+            height: 100px;
+            color: #ffffff;
+        }
+        
+        #p2 {
+            line-height: 20px;
+            margin: 0 0;
+            width: 590px;
+            float: left;
+            color: #ffffff;
+        }
+        
+        #p3 {
+            line-height: 80px;
+            width: 590px;
+            float: left;
+            color: #ffffff;
+        }
+        
+        font {
+            font-size: 22px;
+        }
+        
+        #fourth>#right {
+            width: 605px;
+            height: 1020px;
+            float: left;
+            margin-left: 5px;
+        }
+        
+        #fourth>#right>div {
+            width: 605x;
+            height: 344px;
+        }
+        
+        #hot3 {
+            background-image: url(image/hot3.jpg);
+        }
+        
+        #hot4 {
+            background-image: url(image/hot4.jpg);
+        }
+        
+        #hot5 {
+            background-image: url(image/hot5.jpg);
+        }
+        
+        #s1 {
+            width: 605px;
+            height: 94px;
+            background-color: black;
+            opacity: 0.5;
+            float: left;
+            margin-top: 250px;
+        }
+        #fifth>h1 {
+            width: 1428px;
+            line-height: 80px;
+            float: left;
+            margin: 0 0;
+            padding-top: 40px;
+            text-align: center;
+            color: black;
+            background-color:  #c0bebe;
+        }
+        
+        #fifth>p {
+            width: 1428px;
+            line-height: 40px;
+            margin: 0 0;
+            float: left;
+            text-align: center;
+            background-color:  #c0bebe;
+        }
+        
+        #sixth {
+            width: 1428px;
+            height: 1230px;
+            float: left;
+            background-color:  #c0bebe;
+        }
+        
+        #sixth>#sixth_a {
+            width: 1200px;
+            height: 350px;
+            float: left;
+            margin-left: 109px;
+        }
+        
+        #sixth_left {
+            width: 500px;
+            height: 350px;
+            float: left;
+        }
+        
+        #sixth_right {
+            width: 700px;
+            height: 350px;
+            float: left;
+            background-image: url(image/back.png);
+            background-color: #1c5080;
+            opacity: 0.7;
+        }
+        
+        #sixth_right>h2 {
+            width: 500px;
+            line-height: 100px;
+            text-align: center;
+            margin-left: 100px;
+        }
+        
+        #sixth_right>p {
+            width: 500px;
+            height: 250px;
+            line-height: 30px;
+            float: left;
+            margin-left: 100px;
+            
+        }
+        
+        #sixth_b {
+            width: 1200px;
+            height: 480px;
+            float: left;
+            margin-left: 109px;
+        }
+        
+        #sixth_c {
+            width: 1200px;
+            height: 400px;
+            float: left;
+            background-color: #1c5080;
+            margin-left: 109px;
+        }
+        
+        #sixth_c>div {
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+        
+        #sixth_c>#left {
+            margin-left: 150px;
+        }
+        
+        #sixth_c>div>div {
+            width: 185px;
+            height: 185px;
+            background-image: url(image/rorate.png);
+            margin-top: 40px;
+            margin-left: 60px;
+            text-align: center;
+        }
+        
+        #sixth_c>div>div>image {
+            margin-top: 40px;
+        }
+        
+        #sixth_c>div>div>p {
+            color: #ffffff;
+        }
+        
+        #p5 {
+            width: 300px;
+            height: 100px;
+            float: left;
+            margin-top: 70px;
+            color: #ffffff;
+            text-align: center;
+        }
+        #bottom1 {
+            width: 1428px;
+            height: 450px;
+            background-color: #282828;
+            float: left;
+        }
+        
+        #bottom1>div>ul>li {
+            display: inline-block;
+        }
+        
+        #bottom1>#bot_div {
+            width: 1200px;
+            height: 60px;
+            float: left;
+            margin-top: 30px;
+            margin-left: 109px;
+        }
+        #bottom1>#bot_div2 {
+            width: 1200px;
+            height: 60px;
+            float: left;
+            margin-left: 109px;
+        }
+        
+        #bot_div>#a {
+            width: 1200px;
+            height: 80px;
+            float: left;
+        }
+        #bot_div2>#a {
+            width: 1200px;
+            height: 80px;
+            float: left;
+        }
+        
+        #a_left {
+            width: 100px;
+            height: 80px;
+            float: left;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        #a_x {
+            width: 120px;
+            height: 80px;
+            float: left;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        
+        #a_x>a {
+            color: #ffffff;
+        }
+        #a_y {
+            width: 68px;
+            height: 10px;
+            float: left;
+            text-decoration: none;
+            font-size: 1px;
+        }
+        #a_y>a {
+            color: #ffffff;
+            margin-left: 1px;
+        }
+        #a_z {
+            width: 100px;
+            height: 10px;
+            float: left;
+            text-decoration: none;
+            font-size: 1px;
+        }
+        #a_z>a {
+            color: #ffffff;
+            margin-left: 1px;
+        }
+        #bottom_2 {
+            width: 1428px;
+            height: 100px;
+            background-color: #282828;
+            border-top: 1px solid #cccccc;
+            float: left;
+        }
+        
+        #bottom_2>p {
+            color: #ffffff;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="class1">
+        <div class="one">
+            <a href="#">注册</a></div>
+        <div class="two">|
+        </div>
+        <div class="three">
+            <a href="#">请登录</a>
+        </div>
+        <div class="four">400-808-8682
+        </div>
+        <div class="five">
+        </div>
+
+    </div>
+    <div id="class2">
+        <ul>
+            <li class="o"><a href="#">首页</a>
+            </li>
+            <li class="a"><a href="#">热门路线</a>
+            </li>
+            <li class="a"><a href="#">签证推荐</a>
+            </li>
+            <li class="a"><a href="#">使命愿景</a>
+            </li>
+        </ul>
+    </div>
+    <div id="first">
+        <h1>悠游古欧洲 游览德法瑞意</h1>
+        <div>
+            <div id="p1">
+                <p>巴黎卢浮宫、塞纳河游船、凡尔赛宫</p>
+                <p>少女峰、大运河游船、金色列车、西庸城堡</p>
+            </div>
+            <div id="search">
+                <div id="position"><image src="image/position.png">目的地</div>
+                <div id="position2"><input type="text" name="search"value = "| 日本 美国 英国 地中海"></div>
+                <div id="position3"><button><image src="image/search.png"></button></div>
+            </div>
+            </image>
+        </div>
+    </div>
+    <div id="second">
+        <div id="left">
+            <h1>机场接送，省钱省心</h1>
+            <p>提供上海、苏州、无锡各市</p>
+            <p>往返机场、码头接送服务，更有包车服务</p>
+        </div>
+        <div id="right">
+            <image src="image/car.png">
+            <p>车量接送</p>
+            <div>查看详情</div>
+        </div>
+    </div>
+    <div id="thread">
+        <h1>热 门 线 路</h1>
+        <p>Populer tourist routes</p>
+    </div>
+    <div id="fourth">
+        <div id="left">
+            <div><image src="image/hot1.jpg">
+                <div>
+                    <p id="p2">海南三亚五天四晚，纯玩，四晚红树林度假王国</p>
+                    <p id="p3">
+                        <font>￥2580</font>/人起</p>
+
+                </div>
+            </div>
+            <div><image src="image/hot2.jpg">
+                <div>
+                    <p id="p2">德法意瑞欧洲四国，ABCD任意线路由您挑选</p>
+                    <p id="p3">
+                        <font>￥7999</font>/人起</p>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="hot3">
+                <div id="s1">
+                    <p id="p2">曼谷+芭提雅 国际五星，赠送2220大礼包，绝无自费</p>
+                    <p id="p3">
+                        <font>￥2799</font>/人起</p>
+                </div>
+            </div>
+            <div id="hot4">
+                <div id="s1">
+                    <p id="p2">日本本州游 樱花、寿司、喷泉、美食</p>
+                    <p id="p3">
+                        <font>￥5399</font>/人起</p>
+                </div>
+            </div>
+            <div id="hot5">
+                <div id="s1">
+                    <p id="p2">斯里兰卡7天6晚全景游 保证入住2晚香格里拉</p>
+                    <p id="p3">
+                        <font>￥7999</font>/人起</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fifth">
+        <h1>使命与愿景</h1>
+        <p>让旅游回归本质，体验纯粹旅游</p>
+    </div>
+    <div id="sixth">
+        <div id="sixth_a">
+            <div id="sixth_left"><image src="image/mission1.jpg"> </div>
+            <div id="sixth_right">
+                <h2>服务理念及优势</h2>
+                <p>"英华逸游"通过重新打造旅游全程中的产品线路设计，出行交通方案，陪游向导服务，增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务</p>
+            </div>
+        </div>
+        <div id="sixth_b"><image src="image/mission2.jpg"></div>
+        <div id="sixth_c">
+            <div id="left">
+                <div><image src="image/icon1.png">
+                    <p>品质行程</p>
+                </div>
+                <p id="p5">旅游达人精心设计，<br/> 基于口碑反复打磨，全网最好，敢跟任何产品比
+                </p>
+            </div>
+            <div>
+                <div><image src="image/icon2.png">
+                    <p>品质消费</p>
+                </div>
+                <p id="p5">不推自费，<br/>不进垃圾购物站和伪景点</p>
+            </div>
+            <div>
+                <div><image src="image/icon3.png">
+                    <p>品质小团</p>
+                </div>
+                <p id="p5">独立成团不散拼，<br/>只和亲朋好友一起玩，每天发团</p>
+            </div>
+        </div>
+    </div>
+    <div id="bottom1">
+        <div id="bot_div">
+            <ul id="a">
+                <li id="a_left">合作伙伴</li>
+                <li id="a_x">
+                    <a href="#"><image src="image/xiecheng.png">携程网</a>
+                </li>
+                <li id="a_x">
+                    <a href="#"><image src="image/feizhu.png">阿里飞猪</a>
+                </li>
+                <li id="a_x">
+                    <a href="#"><image src="image/quna.png">去哪儿</a>
+                </li>
+                <li id="a_x">
+                    <a href="#"><image src="image/suzhou.png"><br/>苏州旅游局</a>
+                </li>
+            </ul>
+        </div>
+        <div id="bot_div">
+            <ul id="a">
+                <li id="a_left">热门位置</li>
+                <li id="a_y"><a href="#">韩国</a></li>
+                <li id="a_y"><a href="#">日本</a></li>
+                <li id="a_y"><a href="#">菲律宾</a></li>
+                <li id="a_y"><a href="#">越南</a></li>
+                <li id="a_y"><a href="#">老挝</a></li>
+                <li id="a_y"><a href="#">柬埔寨</a></li>
+                <li id="a_y"><a href="#">泰国</a></li>
+                <li id="a_y"><a href="#">马来西亚</a></li>
+                <li id="a_y"><a href="#">新加坡</a></li>
+                <li id="a_y"><a href="#">印度尼西亚</a></li>
+                <li id="a_y"><a href="#">印度</a></li>
+                <li id="a_y"><a href="#">斯里兰卡</a></li>
+                <li id="a_y"><a href="#">土耳其</a></li>
+                <li id="a_y"><a href="#">阿联酋</a></li>
+                <li id="a_y"><a href="#">西班牙</a></li>
+                <li id="a_y"><a href="#">意大利</a></li>
+                <li id="a_y"><a href="#">希腊</a></li>
+                <li id="a_y"><a href="#">法国</a></li>
+                <li id="a_y"><a href="#">比利时</a></li>
+                <li id="a_y"><a href="#">荷兰</a></li>
+                <li id="a_y"><a href="#">英国</a></li>
+                <li id="a_y"><a href="#">瑞士</a></li>
+                <li id="a_y"><a href="#">奥地利</a></li>
+                <li id="a_y"><a href="#">德国</a></li>
+                <li id="a_y"><a href="#">匈牙利</a></li>
+                <li id="a_y"><a href="#">俄罗斯</a></li>
+                <li id="a_y"><a href="#">捷克</a></li>
+                <li id="a_y"><a href="#">芬兰</a></li>
+                <li id="a_y"><a href="#">葡萄牙</a></li>
+                <li id="a_y"><a href="#">冰岛</a></li>
+                <li id="a_y"><a href="#">美国</a></li>
+                <li id="a_y"><a href="#">加拿大</a></li>
+                <li id="a_y"><a href="#">巴西</a></li>
+                <li id="a_y"><a href="#">阿根廷</a></li>
+                <li id="a_y"><a href="#">澳大利亚</a></li>
+                <li id="a_y"><a href="#">新西兰</a></li>
+            </ul>
+        </div>
+        <div id="bot_div">
+            <ul id="a">
+                <li id="a_left">主题服务</li>
+                <li id="a_y"><a href="#">海岛度假</a></li>
+                <li id="a_y"><a href="#">历史文化</a></li>
+                <li id="a_y"><a href="#">探索冒险</a></li>
+                <li id="a_y"><a href="#">美食购物</a></li>
+                <li id="a_y"><a href="#">都市生活</a></li>
+                <li id="a_y"><a href="#">海外游学</a></li>
+                <li id="a_y"><a href="#">邮轮度假</a></li>
+                <li id="a_y"><a href="#">蜜月摄影</a></li>
+                <li id="a_y"><a href="#">亲子乐园</a></li>
+            </ul>
+        </div>
+        <div id="bot_div2">
+            <ul id="a">
+                <li id="a_left">友情链接</li>
+                <li id="a_z"><a href="#">马蜂窝</a></li>
+                <li id="a_z"><a href="#">穷游</a></li>
+                <li id="a_z"><a href="#">booking</a></li>
+                <li id="a_z"><a href="#">苏州旅游</a></li>
+                <li id="a_z"><a href="#">驴友网</a></li>
+                <li id="a_z"><a href="#">吾爱全球签证中心</a></li>
+                <li id="a_z"><a href="#">酒店团购</a></li>
+                <li id="a_z"><a href="#">携程旅游攻略</a></li>
+                <li id="a_z"><a href="#">天职巡航在线</a></li>
+                <li id="a_z"><a href="#">满天飞旅游网</a></li>
+                <li id="a_z"><a href="#">中国旅游网</a></li>
+                <li id="a_z"><a href="#">澳乐网</a></li>
+                <li id="a_z"><a href="#">背包兔旅游行程</a></li>
+                <li id="a_z"><a href="#">出境旅游</a></li>
+                <li id="a_z"><a href="#">国际酒店</a></li>
+                <li id="a_z"><a href="#">广州旅行社</a></li>
+                <li id="a_z"><a href="#">出境旅游</a></li>
+                <li id="a_z"><a href="#">517旅行</a></li>
+                <li id="a_z"><a href="#">花生游</a></li>
+                <li id="a_z"><a href="#">家园网</a></li>
+                <li id="a_z"><a href="#">海外婚礼</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="bottom_2">
+        <p>2020 @苏州英华国际旅游有限公司 版权所有</p>
+    </div>
+</div>
+</body>
+
+</html>
